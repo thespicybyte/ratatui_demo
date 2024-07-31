@@ -1,0 +1,21 @@
+[package]
+name = "ratatui_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossterm = "0.27.0"
+ratatui = "0.27.0"
+color-eyre = "0.6.3"
+anyhow = "1.0.86"
+log = "0.4.22"
+tui-logger = { version = "0.11.2", features = ["crossterm"] }
+time = "0.3.36"
+config = "0.14.0"
+serde_derive = "1.0.204"
+tracing = "0.1.40"
+tracing-error = "0.2.0"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter", "json"] }
+strum = "0.26.3"
+serde = "1.0.204"
+tui-input = "0.9.0"
