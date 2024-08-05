@@ -185,7 +185,7 @@ impl App {
                         self.input.reset();
                         debug!("{:?}", self.messages);
                     }
-                    Key::Char('q') => self.mode = AppMode::Quit,
+                    KeyCode::Esc => self.mode = AppMode::Quit,
                     _ => (),
                 }
                 self.input.handle_event(&event);
